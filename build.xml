@@ -12,6 +12,7 @@
     <path id="EvolutionaryProgram.classpath">
         <pathelement location="bin"/>
         <pathelement location="lib/junit.jar"/>
+        <pathelement location="lib/org.hamcrest.core_1.3.0.v201303031735.jar"/>
     </path>
     <target name="init">
         <mkdir dir="bin"/>
@@ -58,10 +59,16 @@
             <formatter type="xml"/>
             <test name="in.blazingk.evolutionary.nodes.tests.AddIntConstTest" todir="${junit.output.dir}"/>
             <test name="in.blazingk.evolutionary.nodes.tests.BindIntTest" todir="${junit.output.dir}"/>
+            <test name="in.blazingk.evolutionary.strategies.tests.StrategyTest" todir="${junit.output.dir}"/>
             <test name="in.blazingk.evolutionary.value.tests.ContextTest" todir="${junit.output.dir}"/>
             <test name="in.blazingk.evolutionary.value.tests.ValueTest" todir="${junit.output.dir}"/>
             <classpath refid="EvolutionaryProgram.classpath"/>
         </junit>
+    </target>
+    <target name="Run">
+        <java classname="in.blazingk.evolutionary.ProgramEvolution" failonerror="true" fork="yes">
+            <classpath refid="EvolutionaryProgram.classpath"/>
+        </java>
     </target>
     <target name="junitreport">
         <junitreport todir="${junit.output.dir}">

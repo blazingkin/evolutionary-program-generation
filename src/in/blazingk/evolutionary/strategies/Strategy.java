@@ -14,4 +14,19 @@ public class Strategy {
 		}
 	}
 	
+	/* Evolve with parents */
+	public Strategy(Strategy... parents){
+		for (Decision d : Decision.values()){
+			double sum = 0d;
+			for (Strategy s : parents){
+				sum += s.weights.get(d);
+			}
+			weights.put(d, sum / parents.length);
+		}
+	}
+	
+	public double getWeight(Decision d){
+		return weights.get(d);
+	}
+	
 }
