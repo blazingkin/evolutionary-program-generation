@@ -12,4 +12,8 @@ public class IOHandler {
 		log.add(v);
 	}
 	
+	public static void cleanup(){
+		log.clear();
+	}
+	
 }

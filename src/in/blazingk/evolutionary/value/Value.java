@@ -37,6 +37,15 @@ public class Value {
 		return !(this.type == Type.None || (this.type == Type.Boolean && ((Boolean)this.value) == false));
 	}
 	
+	public boolean equals(Object other){
+		if (other instanceof Value){
+			Value otherVal = (Value) other;
+			return otherVal.type == this.type && ((this.type == Type.None) || this.value.equals(otherVal.value));
+		}else{
+			return false;
+		}
+	}
+	
 	public static Value None = new Value();
 	
 }

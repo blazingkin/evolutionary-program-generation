@@ -1,7 +1,6 @@
 package in.blazingk.evolutionary.nodes;
 
 import in.blazingk.evolutionary.value.Context;
-import in.blazingk.evolutionary.value.Type;
 import in.blazingk.evolutionary.value.Value;
 
 public class IfNode implements Node {

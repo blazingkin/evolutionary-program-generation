@@ -6,12 +6,20 @@ public class Context {
 
 	private HashMap<Integer, Value> locals = new HashMap<Integer, Value>();
 	public Context parent = null;
+	
+	public Context(){
+		
+	}
+	
 	public Context(Context parent){
 		this.parent = parent;
 	}
 	
 	public int count(){
-		return locals.size();
+		if (parent == null){
+			return locals.size();
+		}
+		return parent.count() + locals.size();
 	}
 	
 	public Value get(int i) throws Exception{
