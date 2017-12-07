@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="Alex-Laptop" name="in.blazingk.evolutionary.value.tests.ContextTest" skipped="0" tests="2" time="0.212" timestamp="2017-12-07T04:54:13">
+<testsuite errors="0" failures="0" hostname="Alex-Laptop" name="in.blazingk.evolutionary.value.tests.ContextTest" skipped="0" tests="2" time="0.194" timestamp="2017-12-07T04:58:09">
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
     <property name="env.LESSOPEN" value="| /usr/bin/lesspipe %s" />
@@ -59,7 +59,7 @@
     <property name="java.vendor.url" value="http://java.oracle.com/" />
     <property name="java.vm.vendor" value="Oracle Corporation" />
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner in.blazingk.evolutionary.value.tests.ContextTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/mnt/c/Users/blazi/OldDrive/Documents/GitHub/evolutionary-programs/EvolutionaryProgram/junit/TEST-in.blazingk.evolutionary.value.tests.ContextTest.xml crashfile=/mnt/c/Users/blazi/OldDrive/Documents/GitHub/evolutionary-programs/EvolutionaryProgram/junitvmwatcher1436201049742658404.properties propsfile=/mnt/c/Users/blazi/OldDrive/Documents/GitHub/evolutionary-programs/EvolutionaryProgram/junit5356234189696672029.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner in.blazingk.evolutionary.value.tests.ContextTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/mnt/c/Users/blazi/OldDrive/Documents/GitHub/evolutionary-programs/EvolutionaryProgram/junit/TEST-in.blazingk.evolutionary.value.tests.ContextTest.xml crashfile=/mnt/c/Users/blazi/OldDrive/Documents/GitHub/evolutionary-programs/EvolutionaryProgram/junitvmwatcher768270545406641531.properties propsfile=/mnt/c/Users/blazi/OldDrive/Documents/GitHub/evolutionary-programs/EvolutionaryProgram/junit7947709529741420284.properties" />
     <property name="java.class.path" value="/mnt/c/Users/blazi/OldDrive/Documents/GitHub/evolutionary-programs/EvolutionaryProgram/bin:/mnt/c/eclipse/plugins/org.junit_4.12.0.v201504281640/junit.jar:/mnt/c/eclipse/plugins/org.hamcrest.core_1.3.0.v201303031735.jar:/usr/share/java/ant-launcher-1.9.6.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on July 8 2015" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
@@ -88,7 +88,7 @@
     <property name="env.LESSCLOSE" value="/usr/bin/lesspipe %s %s" />
   </properties>
   <testcase classname="in.blazingk.evolutionary.value.tests.ContextTest" name="shouldThrowError" time="0.002" />
-  <testcase classname="in.blazingk.evolutionary.value.tests.ContextTest" name="shouldSetAndRetrieveValues" time="0.003" />
+  <testcase classname="in.blazingk.evolutionary.value.tests.ContextTest" name="shouldSetAndRetrieveValues" time="0.002" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
