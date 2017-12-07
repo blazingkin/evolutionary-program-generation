@@ -59,6 +59,7 @@
             <formatter type="xml"/>
             <test name="in.blazingk.evolutionary.nodes.tests.AddIntConstTest" todir="${junit.output.dir}"/>
             <test name="in.blazingk.evolutionary.nodes.tests.BindIntTest" todir="${junit.output.dir}"/>
+            <test name="in.blazingk.evolutionary.nodes.tests.BlockNodeTest" todir="${junit.output.dir}"/>
             <test name="in.blazingk.evolutionary.strategies.tests.StrategyTest" todir="${junit.output.dir}"/>
             <test name="in.blazingk.evolutionary.value.tests.ContextTest" todir="${junit.output.dir}"/>
             <test name="in.blazingk.evolutionary.value.tests.ValueTest" todir="${junit.output.dir}"/>

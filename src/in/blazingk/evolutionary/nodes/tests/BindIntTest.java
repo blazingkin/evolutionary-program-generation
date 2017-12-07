@@ -14,10 +14,10 @@ public class BindIntTest {
 	@Test
 	public void shouldBindIntToZero() throws Exception {
 		Context con = new Context();
-		Node n = new BindInt();
+		Node n = new BindInt(0);
 		n.execute(con);
 		assertEquals(1, con.count());
-		assertEquals(new Value(0), con.get(1));
+		assertEquals(new Value(0), con.get(0));
 	}
 
 }

@@ -5,14 +5,19 @@ import in.blazingk.evolutionary.value.Value;
 
 public class BindInt implements Node {
 
+	int which;
+	public BindInt(int which){
+		this.which = which;
+	}
+	
 	@Override
 	public String getName() {
-		return "Bind new int (to 0)";
+		return "Bind new int ("+which+") (to 0)";
 	}
 
 	@Override
 	public Value execute(Context con) {
-		con.set(con.count() + 1, new Value(0));
+		con.set(which, new Value(0));
 		return new Value(0);
 	}
 
