@@ -3,6 +3,9 @@ package in.blazingk.evolutionary.strategies;
 import java.util.HashMap;
 import java.util.Random;
 
+import in.blazingk.evolutionary.nodes.Node;
+import in.blazingk.evolutionary.nodes.builders.Builder;
+
 public class Strategy {
 
 	public HashMap<Decision, Double> weights = new HashMap<Decision, Double>();
@@ -27,6 +30,10 @@ public class Strategy {
 	
 	public double getWeight(Decision d){
 		return weights.get(d);
+	}
+	
+	public Node generateTree(Random r){
+		return Builder.Generic.builder.build(this, r);
 	}
 	
 }
